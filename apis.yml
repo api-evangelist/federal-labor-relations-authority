@@ -21,8 +21,7 @@ specificationVersion: '0.19'
 apis:
   - aid: federal-labor-relations-authority:federal-labor-relations-authority
     name: Federal Labor Relations Authority
-    tags:
-      - API
+    tags: []
     humanURL: https://www.flra.gov/
     properties:
       - url: https://www.flra.gov/
