@@ -30,10 +30,14 @@ apis:
       The Federal Labor Relations Authority administers federal labor-management
       relations law.
 common:
+  - type: DomainSecurity
+    url: security/federal-labor-relations-authority-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/federal-labor-relations-authority
   - type: Website
     url: https://www.flra.gov/
+  - url: https://www.flra.gov/rss.xml
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
