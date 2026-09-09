@@ -33,14 +33,24 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/federal-labor-relations-authority.png
 access: 3rd-Party
 created: '2024-12-03'
-modified: '2026-04-28'
+modified: '2026-09-09'
 position: Consuming
 tags:
   - Federal-Government
   - Labor
+  - Labor-Relations
+  - Collective-Bargaining
+  - Public-Sector
+  - Government
+  - Legal
 tags_raw:
   - Federal Government
   - Labor
+  - Labor Relations
+  - Collective Bargaining
+  - Public Sector
+  - Government
+  - Legal
 url: >-
   https://raw.githubusercontent.com/api-evangelist/federal-labor-relations-authority/refs/heads/main/apis.yml
 specificationVersion: '0.23'
@@ -64,6 +74,49 @@ common:
     url: https://www.flra.gov/
   - url: https://www.flra.gov/rss.xml
     type: Blog
+  - type: Support
+    name: Contact the FLRA
+    url: https://www.flra.gov/contact
+  - type: PrivacyPolicy
+    name: Privacy Policy
+    url: https://www.flra.gov/privacy
+  - type: Plans
+    name: Plans and Pricing
+    url: plans/federal-labor-relations-authority-plans-pricing.yml
+  - type: LLMsTxt
+    name: llms.txt
+    url: llms/federal-labor-relations-authority-llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-09'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    The FLRA runs a Drupal website with an eFiling flow and an eLibrary case-document search for
+    end users, but no developer program of any kind — /api, /api-docs, /developers, /developer,
+    /jsonapi, /graphql, /openapi.json, /swagger.json and every named /.well-known/ path all return
+    the Drupal 404 page, api.flra.gov / data.flra.gov / developer.flra.gov do not resolve in DNS,
+    and the agency's own Open Government page says its data is still "in the process" of being
+    submitted to data.gov, so the only machine-readable output it publishes is seven RSS feeds.
+  evidence:
+    - url: https://www.flra.gov/openapi.json
+      status: 404
+    - url: https://www.flra.gov/api-docs
+      status: 404
+    - url: https://www.flra.gov/developers
+      status: 404
+    - url: https://www.flra.gov/jsonapi
+      status: 404
+    - url: https://www.flra.gov/.well-known/api-catalog
+      status: 404
+    - url: https://www.flra.gov/open-government
+      status: 200
+    - url: https://www.flra.gov/rss.xml
+      status: 200
+  checked: '2026-09-09'

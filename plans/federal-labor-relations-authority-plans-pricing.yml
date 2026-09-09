@@ -1,142 +1,48 @@
-specification: API Commons Plans
-specificationVersion: '0.1'
-schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+generated: '2026-09-09'
+method: searched
+source: >-
+  https://www.flra.gov/ (site navigation, HTTP 200), https://www.flra.gov/open-government
+  (HTTP 200) and https://www.flra.gov/contact (HTTP 200). No /pricing, /plans, /developers,
+  /developer or /api path exists on the site — each returns the Drupal 404 page.
+checked: '2026-09-09'
 provider: Federal Labor Relations Authority
 providerId: federal-labor-relations-authority
-created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-04'
-tags:
-  - Federal Government
-  - Labor
-description: Machine-readable plans and pricing scaffold for this API provider. Conforms to the API Commons
-  Plans schema. Tier limits and prices are scaffold defaults; replace with provider-published values.
-plans:
-  - id: federal-labor-relations-authority-free
-    name: Free
-    type: freemium
-    description: Free entry tier for the Federal Labor Relations Authority API surface. Intended for evaluation,
-      prototyping, and low-volume integrations. Real limits and pricing must be reconciled with the provider's
-      published plan documentation.
-    entries:
-      - label: API Requests
-        description: Monthly API request quota across all included endpoints
-        name: api_requests
-        type: quota
-        metric: requests
-        limit: 1000
-        timeFrame: month
-        geo: global
-        domains: []
-        unit: 1
-        price: '0.00'
-        userMultiplied: false
-      - label: Rate Limit
-        description: Maximum requests per minute on the free tier
-        name: rate_limit
-        type: rate
-        metric: requests_per_minute
-        limit: 10
-        timeFrame: minute
-        geo: global
-        domains: []
-        unit: 1
-        price: '0.00'
-        userMultiplied: false
-    elements:
-      - name: Public Documentation
-      - name: Community Support
-      - name: Sandbox Access
-      - name: Federal Labor Relations Authority
-  - id: federal-labor-relations-authority-pro
-    name: Professional
-    type: paid
-    description: Production tier for Federal Labor Relations Authority. Provides higher quotas, priority
-      support, and access to the broader API portfolio. Pricing placeholder; align with the provider's
-      pricing page.
-    entries:
-      - label: API Requests
-        description: Monthly API request quota
-        name: api_requests
-        type: quota
-        metric: requests
-        limit: 100000
-        timeFrame: month
-        geo: global
-        domains: []
-        unit: 1
-        price: TBD
-        userMultiplied: false
-      - label: Rate Limit
-        description: Maximum requests per minute on the professional tier
-        name: rate_limit
-        type: rate
-        metric: requests_per_minute
-        limit: 100
-        timeFrame: minute
-        geo: global
-        domains: []
-        unit: 1
-        price: '0.00'
-        userMultiplied: false
-      - label: Overage
-        description: Per-request price after monthly quota is exceeded
-        name: overage
-        type: metered
-        metric: requests
-        limit: -1
-        timeFrame: month
-        geo: global
-        domains: []
-        unit: 1000
-        price: TBD
-        userMultiplied: false
-    elements:
-      - name: All Production Endpoints
-      - name: Email Support
-      - name: SLA Targets
-      - name: Webhook Subscriptions
-      - name: Federal Labor Relations Authority
-  - id: federal-labor-relations-authority-enterprise
-    name: Enterprise
-    type: enterprise
-    description: Custom-negotiated tier for Federal Labor Relations Authority. Includes dedicated capacity,
-      contractual SLAs, security review, data residency options, and named technical account management.
-    entries:
-      - label: API Requests
-        description: Negotiated request volume; -1 indicates uncapped subject to fair use
-        name: api_requests
-        type: quota
-        metric: requests
-        limit: -1
-        timeFrame: month
-        geo: configurable
-        domains: []
-        unit: 1
-        price: custom
-        userMultiplied: false
-      - label: Rate Limit
-        description: Negotiated burst and steady-state rate
-        name: rate_limit
-        type: rate
-        metric: requests_per_minute
-        limit: 1000
-        timeFrame: minute
-        geo: configurable
-        domains: []
-        unit: 1
-        price: custom
-        userMultiplied: false
-    elements:
-      - name: Unlimited / Negotiated Volume
-      - name: 24/7 Dedicated Support
-      - name: Contractual SLA
-      - name: Security & Compliance Review
-      - name: Dedicated Account Manager
-      - name: Custom Data Residency
-      - name: Federal Labor Relations Authority
+summary: >-
+  The Federal Labor Relations Authority publishes no plans, no tiers and no prices, and there
+  is nothing here that could carry one. The FLRA is an independent US federal agency that
+  administers the federal-sector labor-management relations program under 5 U.S.C. Chapter 71;
+  its services (case filing, representation elections, negotiability determinations, arbitration
+  review, training) are statutory functions funded by congressional appropriation, not products
+  sold to customers. It operates no API, no developer program and no billable surface, so
+  plan_count is an honest zero rather than a gap in our research.
+plan_count: 0
+prices_published: false
+currency: null
+billing_period: null
+public_signup_pricing: false
+pricing_page: null
+pricing_page_note: >-
+  No pricing page exists and none is expected. Cost information the agency does publish is
+  budgetary, not commercial: Congressional Budget Justifications and Performance & Accountability
+  Reports at https://www.flra.gov/about/budget-performance (HTTP 200).
+plans: []
+access_model:
+  pricing: free
+  onboarding: none
+  api_key_required: false
+  registration_required: false
+  note: >-
+    Everything the FLRA publishes machine-readably — the RSS feeds at https://www.flra.gov/feeds
+    and the FOIA annual-report XML in the Electronic Reading Room — is served anonymously with no
+    key, no account and no terms of purchase.
+supersedes:
+  note: >-
+    This file replaces a 2026-05-04 bulk-sweep scaffold that invented Free / Professional /
+    Enterprise tiers with 1,000 / 100,000 / unlimited monthly request quotas for an agency that
+    ships no API. Those tiers were never published by the FLRA and were not derived from anything
+    the agency serves. Removed under the no-fabrication rule.
+  replaced_method: generated
+  replaced_dated: '2026-05-04'
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

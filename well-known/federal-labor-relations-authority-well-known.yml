@@ -1,0 +1,83 @@
+generated: '2026-09-09'
+method: probed
+source: live HTTPS probes of every host this record knows (www.flra.gov, flra.gov)
+provider: Federal Labor Relations Authority
+providerId: federal-labor-relations-authority
+description: >-
+  Probe log of the named /.well-known/ discovery paths on every host in this record.
+  No path returned a document. The FLRA web property is a Drupal site with no
+  developer program, no API host and no OAuth surface, so there is no
+  authorization-server or protected-resource metadata to find. The apex host
+  flra.gov resolves in DNS but resets the TLS connection, so nothing could be
+  probed there at all — only www.flra.gov serves HTTPS.
+  RECORDED ABSENCE, NOT A PRESENCE: no WellKnown or SecurityTxt pointer is wired
+  into apis.yml because no path served a real document.
+hosts:
+  - host: www.flra.gov
+    note: >-
+      Every 404 body is the Drupal themed 404 page (or the Apache 404 for
+      /.well-known/security.txt), i.e. an honest not-found, not a catch-all 200.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 404
+        file: null
+  - host: flra.gov
+    note: >-
+      Apex resolves to 63.146.241.34 but the TLS handshake is reset
+      ("Recv failure: Connection reset by peer"); status 0 means no HTTP response
+      was received, not a 404. Only the www host serves the site.
+    documents:
+      - path: /.well-known/security.txt
+        status: 0
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 0
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 0
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 0
+        file: null
+      - path: /.well-known/api-catalog
+        status: 0
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 0
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 0
+        file: null
+      - path: /.well-known/agent.json
+        status: 0
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 0
+        file: null
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
