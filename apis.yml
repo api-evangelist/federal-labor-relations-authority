@@ -67,6 +67,10 @@ apis:
       The Federal Labor Relations Authority administers federal labor-management
       relations law.
 common:
+  - type: RateLimits
+    url: rate-limits/federal-labor-relations-authority-rate-limits.yml
+  - type: FinOps
+    url: finops/federal-labor-relations-authority-finops.yml
   - type: DomainSecurity
     url: security/federal-labor-relations-authority-domain-security.yml
   - type: LinkedIn
