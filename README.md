@@ -1,4 +1,4 @@
-# Federal Labor Relations Authority (federal-labor-relations-authority)
+# Federal Labor Relations Authority
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,48 +66,102 @@
 
 The Federal Labor Relations Authority oversees the Federal service labor-management relations program. It administers the law that protects the right of employees of the Federal Government to organize, bargain collectively, and participate through labor organizations of their own choosing in decisions affecting them.
 
-**URL:** [Visit APIs.json URL](
-https://raw.githubusercontent.com/api-evangelist/federal-labor-relations-authority/refs/heads/main/apis.yml)
+**Areas:** Federal Government · Labor · Labor-Relations · Collective-Bargaining · Public Sector · Government · Legal
 
-## Scope
+## Federal Labor Relations Authority on APIs.io
 
-- **Type:** Contract 
-- **Position:** Consuming 
-- **Access:** 3rd-Party 
+Everything profiled for Federal Labor Relations Authority is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/federal-labor-relations-authority/](https://apis.io/providers/federal-labor-relations-authority/)** — or go straight to one of the APIs or properties below.
 
-## Tags:
+### APIs (1)
 
- - Federal Government
+- [Federal Labor Relations Authority](https://apis.io/apis/federal-labor-relations-authority/federal-labor-relations-authority/) — The Federal Labor Relations Authority administers federal labor-management relations law.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-12-03 
-- **Modified:** 2026-04-28 
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Security (1)
 
-### Federal Labor Relations Authority
+Authentication, trust centre, and vulnerability disclosure.
 
-Find historical decisions of the Assistant Secretary of Labor for
-Labor-Management Relations and the Federal Labor Relations Council, as
-well as Foreign Service Labor Relations Board decisions. ... Federal Labor
-Relations Authority 1400 K Street, NW Washington, DC 20424 771-444-5801.
-Footer Menu Col1. Home; About Us; Components & Offices ...
+- [Federal Labor Relations Authority Domain Security](https://apis.io/security/federal-labor-relations-authority/federal-labor-relations-authority-domain-security/)
 
-**Human URL:** [https://www.flra.gov/components-offices/components/authority](https://www.flra.gov/components-offices/components/authority)
+#### Plans and pricing (1)
 
+Published plans, tiers and prices.
 
-#### Tags:
+- [Federal Labor Relations Authority Plans Pricing](https://apis.io/plans/federal-labor-relations-authority/federal-labor-relations-authority-plans-pricing/)
 
- - API
+#### Rate limits (1)
 
-#### Properties
+Published request limits.
 
-- [Documentation](https://www.flra.gov/components-offices/components/authority)
+- [Federal Labor Relations Authority Rate Limits](https://apis.io/rate-limits/federal-labor-relations-authority/federal-labor-relations-authority-rate-limits/)
 
-## Maintainers
+#### FinOps (1)
 
-**FN:** Kin Lane
+What the API costs to run, by operation.
 
-**Email:** kin@apievangelist.com
+- [Federal Labor Relations Authority Finops](https://apis.io/finops/federal-labor-relations-authority/federal-labor-relations-authority-finops/)
 
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.flra.gov/)
+- [Support](https://www.flra.gov/contact)
+- [Blog](https://www.flra.gov/rss.xml)
+- [Privacy policy](https://www.flra.gov/privacy)
+
+## API Evangelist rating
+
+**Kin Score 8.7** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 10.5 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.8** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/federal-labor-relations-authority/](https://apis.io/providers/federal-labor-relations-authority/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Federal Labor Relations Authority: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/federal-labor-relations-authority/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
